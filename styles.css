@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+   
+}
+#header{
+    display: flex;
+    height: 50px;
+}
+#logo{
+    width: 50%;
+   margin: 2px 5px;
+   text-align: start;
+}
+#logoImg{
+    width: 70px;
+    border-radius: 50%;
+    height: 100%;
+    background-color: gainsboro;
+    text-align: center;
+    overflow: hidden;
+}
+#logoIMg,img{
+    background-size: cover;
+    width: 100%;
+    background-position: screen;
+}
+#header-bottom{
+    width: 50%;
+}
+section{
+    text-align: center;
+    place-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:linear-gradient(to Right,green,rgb(4, 84, 86));
+    overflow: hidden;
+}
+#box1{
+    transform:scale(-3s);
+    transition: 2s ease-in-out;
+    margin-top: 10px;
+}
+.name1{
+    
+    transition: 4s ;
+    transform:skew(180deg);
+    font-style: bold;
+   color: white;
+filter: drop-shadow(2px 6px 1px rgb(1, 0, 0));
+   font-family: "DM Serif Display", serif;
+    font-weight: 800;
+    font-style: italic;
+    font-size:69px;
+}
+.nameMethod{
+    position:absolute;
+    margin-left: -60px;
+    margin-top: -40px;
+    font-size: 40px;
+    color: rgba(255, 255, 255, 0);
+    color: white;
+    text-shadow:2px 2px 0px black;
+    filter: drop-shadow(2px -3px 1px black);
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+section .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background:url(wave2.png);
+    background-size: 1000px 100px;
+}
+section .wave.wave1{
+    animation: animate 30s linear infinite;
+    z-index: 999;
+    opacity: 1;
+    animation-delay: -3s ;
+    bottom:30;
+}
+section .wave.wave2{
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.4;
+    animation-delay: -5s;
+    bottom: 50px;
+}
+
+@keyframes animate{
+    0%{
+        background-position-x:0 ;
+
+    }
+    100%{
+        background-position-x:1000px;
+    }
+}
+@keyframes animate2{
+    0%{
+        background-position-x:0 ;
+
+    }
+    100%{
+        background-position-x:1000px;
+    }
+}
+
+
+section .wave.wave3{
+    animation: animate3 10s linear infinite;
+    z-index: 980;
+    opacity: 0.2;
+    animation-delay: -3s;
+    bottom: 20px;
+}
+
+@keyframes animate3{
+    0%{
+        background-position-x:0 ;
+
+    }
+    100%{
+        background-position-x:1000px;
+    }
+}
+
+.white{
+    background-color: white;
+    width:100%;
+    height: auto;
+}
+#slider{
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 200px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+#sliderbox, span{
+    font-size: x-large;
+font-weight: 900;
+}
+#img2{
+    transition: 1s;
+}
+#main{
+    margin-top: 20px;
+    padding: 5px;
+    border: 2px solid blueviolet;
+    box-shadow: 1px 1px 20px 10px black;
+}
+
+
+/*start slider code*/
+
+
+.slider-container {
+    width: 90%;
+    margin: 15px auto;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .slide {
+    flex: 1 0 100%;
+    min-width: 100%;
+  }
+  
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+  .footerName{
+    
+    font-style: bold;
+   color: white;
+   background: linear-gradient(to Right,red,yellow,green);
+   font-family: "DM Serif Display", serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size:40px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  #search2:hover{
+    transition: 2s ease-in-out ;
+    transform: scale(1.2);
+  }
+  .items:hover{
+    transition: 4s;
+   /* transform:translate(100px,200px);*/
+   /*transform: skew(30deg);*/
+   /*transform: rotate(30deg);*/
+  
+  }
+
+  /* hover start*/
+.btn:hover{
+    transition: 0.5s ease-in;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+#search:hover{
+    transform: scale(1.3);
+transition: 2s  ease-in-out;
+}
+h1:hover{
+    transform: scale(1.3);
+transition: 2s  ease-in-out;
+}
+span:hover{
+    transform: scale(1.1);
+    transition: 3s;
+}
+svg:hover{
+    transform: scale(1.5);
+    transition: 2s  ease-in-out;
+}
